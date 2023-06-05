@@ -9,6 +9,7 @@ use std::io::{self, BufRead, Write};
  * The function accepts LONG_INTEGER_ARRAY ar as parameter.
  */
 
+#[allow(non_snake_case)]
 fn aVeryBigSum(ar: &[i64]) -> i64 {
     ar.iter().fold(0, |total, item| total + item)
 }
